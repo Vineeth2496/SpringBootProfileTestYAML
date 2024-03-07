@@ -1,0 +1,18 @@
+my:
+  app:
+    driver: Oracle-Driver-DEF
+    url: JDBC-URL-DEF
+---
+spring:
+  profiles: qa
+my:
+  app:
+    driver: MySQL-Driver-QA
+    url: JDBC-URL-QA
+---
+spring:
+  profiles: uat
+my:
+  app:
+    driver: SYBASE-Driver-UAT
+    url: JDBC-URL-UAT
